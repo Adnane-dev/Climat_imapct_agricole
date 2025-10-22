@@ -1,0 +1,67 @@
+# =====================================================================
+# 🌍 Projet Visualisation Climatique & Impact Agricole
+# .gitignore — par Adnane & Radhia
+# =====================================================================
+
+# === ENVIRONNEMENT PYTHON ===
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg/
+*.log
+
+# === FICHIERS DE DONNÉES (trop volumineux pour GitHub) ===
+data/
+data_noaa/
+*.csv
+*.txt
+*.xlsx
+*.zip
+*.npz
+*.npy
+*.h5
+*.json
+
+# Garde les scripts dans app/data_noaa/processed mais ignore les données brutes
+!app/data_noaa/processed/
+!data_noaa/processed/
+
+# === NOTEBOOKS JUPYTER ===
+*.ipynb_checkpoints/
+.notebooks/
+output/
+tmp/
+
+# === VISUALISATION ET DASHBOARD ===
+dashboard/__pycache__/
+app/__pycache__/
+dashboard/assets/__pycache__/
+
+# === RAPPORTS & PDF ===
+rapport/*.pdf
+rapport/*.docx
+
+# === CONFIGURATION PERSONNELLE ===
+.env
+config.yaml.local
+secrets.yaml
+*.bak
+*.tmp
+*.swp
+
+# === ÉDITEURS / OS ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === TESTS ET TEMPORAIRES ===
+.pytest_cache/
+__temp__/
+cache/
