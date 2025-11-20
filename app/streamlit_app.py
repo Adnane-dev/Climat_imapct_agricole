@@ -2327,6 +2327,7 @@ def show_crispdm_overview():
         ("Git", "📚", "Versioning")
     ]
     
+    
     for i, (name, icon, desc) in enumerate(technologies):
         with tech_cols[i % 4]:
             st.markdown(f"""
@@ -2342,18 +2343,18 @@ def show_crispdm_overview():
                 <h5 style='margin: 0.5rem 0;'>{name}</h5>
                 <p style='color: #666; font-size: 0.8rem; margin: 0;'>{desc}</p>
             </div>
- 
-             # Footer moderne
-            st.markdown("---")
-        st.markdown("""
-        <div style='text-align: center; color: #94a3b8; padding: 2rem;'>
+            """, unsafe_allow_html=True)
+    
+    # Footer moderne
+    st.markdown("---")
+    st.markdown("""
+    <div style='text-align: center; color: #94a3b8; padding: 2rem;'>
         <p><strong>ClimateVision AI</strong> - Plateforme d'Analyse Climatique Intelligente</p>
         <p>🌐 <a href='https://www.noaa.gov/' target='_blank' style='color: #6366f1;'>Données NOAA</a> | 
         📚 <a href='https://github.com/Adnane-dev/Climat_imapct_agricole' target='_blank' style='color: #6366f1;'>GitHub</a> | 
         🎓 MPDS3 2025</p>
     </div>
-            
-            """, unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
 # ==========================================
 # FONCTION PRINCIPALE
